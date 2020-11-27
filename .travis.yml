@@ -9,10 +9,11 @@ cache: yarn
 before_install:
   - export TZ='Asia/Shanghai'  # 设置时区
 script:
-  - cp -a src/ dist/
-  - cd dist/
-  - git init
-  - git add -A
-  - git commit -m 'deploy'
-  - git push -f https://${access_token}@github.com/wangxiuwen/wangxiuwen.github.io.git master:master
-  - cd -
+    - echo "废弃 travis-ci, 使用 github Actions"
+#   - cp -a src/ dist/
+#   - cd dist/
+#   - git init
+#   - git add -A
+#   - git commit -m 'deploy'
+#   - git push -f https://${access_token}@github.com/wangxiuwen/wangxiuwen.github.io.git master:master
+#   - cd -
